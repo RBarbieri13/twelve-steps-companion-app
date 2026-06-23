@@ -28,6 +28,9 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # Enable Pages automatically on first run (build type: GitHub Actions).
+          enablement: true
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
